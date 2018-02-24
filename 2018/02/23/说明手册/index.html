@@ -87,14 +87,13 @@
 <meta property="og:description" content="引言  系统概述&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;基于WebGL开源库cesium，结合前端react框架，redux消息管理机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg">
-<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg">
-<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayers.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/layers.jpg">
-<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayer.jpg">
+<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg">
+<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayers.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/tools.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/lon.jpg">
-<meta property="og:updated_time" content="2018-02-24T08:39:38.000Z">
+<meta property="og:updated_time" content="2018-02-24T08:46:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KeepSoft3D使用手册">
 <meta name="twitter:description" content="引言  系统概述&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;基于WebGL开源库cesium，结合前端react框架，redux消息管理机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。">
@@ -194,7 +193,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -204,7 +203,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -268,7 +267,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-23T14:07:07+08:00">
                 2018-02-23
@@ -326,8 +325,8 @@
 <li><p>3.1 顶部菜单</p>
 <p>顶部菜单主要功能是控制图层的显示，加载图层的选择，二维和三维之间的切换。</p>
 </li>
-<li>3.1.1 图层菜单 <br>点击图层按钮 <img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg" alt="layerTool">,弹出加载不同维度图层栏，如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayers.jpg" alt="3dlayers">，再次点击图层按钮，图层加载栏消失。</li>
-<li>3.1.1.1 图层管理<br> 点击数据菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。图层管理包含图层的加载，移除，缩放至项目范围区，改变图层透明度。图层管理如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg" alt="layers"><ul>
+<li>3.1.1 图层管理<br>点击数据菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。</li>
+<li>3.1.1.1 图层控制<br> 图层管理包含图层的加载，移除，缩放至项目范围区，改变图层透明度。图层管理如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg" alt="layers"><ul>
 <li>点击全部移除则添加的图层被全部移除 </li>
 <li>点击图层范围，则定位到该图层范围</li>
 <li>拖动滑动条，改变图层的透明度</li>
@@ -339,7 +338,7 @@
 <li>点击想要加载的图层类型，点击加号加载图层至三维球</li>
 </ul>
 </li>
-<li><p>3.1.2 图层菜单<br> 点击图层菜单出现不同维度影像加载列表。不同维度图层加载包括二维影像，三维影像和2.5D影像。如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayer.jpg" alt="3dlayer"><br> 点击不同的维度，对应出现不同维度的影像，右边的操作柄也随之变动。点击2.5D和2D指北针消失，点击3D指北针出现。</p>
+<li><p>3.1.2 图层菜单<br>点击图层按钮 <img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg" alt="layerTool">弹出加载不同维度图层栏，再次点击图层按钮，图层加载栏消失。如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayers.jpg" alt="3dlayers"><br> &nbsp;&nbsp;&nbsp;&nbsp;点击图层菜单出现不同维度影像加载列表。不同维度图层加载包括二维影像，三维影像和2.5D影像。点击不同的维度，对应出现不同维度的影像，右边的操作柄也随之变动。点击2.5D和2D指北针消失，点击3D指北针出现。</p>
 </li>
 <li>3.2 操作手柄<br> 右侧操作柄功能是控制三维地球放大，缩小，旋转，复位。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/tools.jpg" alt="tools"> <ul>
 <li>3.2.1<ul>
@@ -462,7 +461,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">8</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -514,7 +513,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
