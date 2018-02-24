@@ -79,23 +79,24 @@
 
 
 
-<meta name="description" content="引言  系统概述基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。 使用范围仅限于本系统开发人员和使用人员，解释权归开发人员所有。 运行环境适用于PC端所有浏览器和移">
+<meta name="description" content="引言  系统概述&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KeepSoft3D使用手册">
 <meta property="og:url" content="http://yanhejin.com/2018/02/23/说明手册/index.html">
 <meta property="og:site_name" content="哆啦酱的博客">
-<meta property="og:description" content="引言  系统概述基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。 使用范围仅限于本系统开发人员和使用人员，解释权归开发人员所有。 运行环境适用于PC端所有浏览器和移">
+<meta property="og:description" content="引言  系统概述&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg">
+<meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/layers.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayer.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/tools.jpg">
 <meta property="og:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/lon.jpg">
-<meta property="og:updated_time" content="2018-02-24T08:13:31.000Z">
+<meta property="og:updated_time" content="2018-02-24T08:25:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KeepSoft3D使用手册">
-<meta name="twitter:description" content="引言  系统概述基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。 使用范围仅限于本系统开发人员和使用人员，解释权归开发人员所有。 运行环境适用于PC端所有浏览器和移">
+<meta name="twitter:description" content="引言  系统概述&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。 编写目的  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。">
 <meta name="twitter:image" content="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg">
 
 
@@ -192,7 +193,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Home
           </a>
         </li>
       
@@ -266,7 +267,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-23T14:07:07+08:00">
                 2018-02-23
@@ -309,23 +310,22 @@
         <ol>
 <li><p>引言</p>
 <ul>
-<li>系统概述<br>基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。</li>
-<li>编写目的<br>本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。</li>
-<li>使用范围<br>仅限于本系统开发人员和使用人员，解释权归开发人员所有。</li>
-<li>运行环境<br>适用于PC端所有浏览器和移动端所有浏览器。</li>
-<li>操作系统<br>适用于PC端 Windows及Mac系统，移动端android和ios系统。</li>
-<li>软件运行平台及开发语言<br>本软件使用VSCode软件开发，开发语言为javascript。</li>
+<li>系统概述<br>&nbsp;&nbsp;&nbsp;&nbsp;基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。</li>
+<li>编写目的<br>  &nbsp;&nbsp;&nbsp;&nbsp;本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。</li>
+<li>使用范围<br>  &nbsp;&nbsp;&nbsp;&nbsp;仅限于本系统开发人员和使用人员，解释权归开发人员所有。</li>
+<li>运行环境<br>  &nbsp;&nbsp;&nbsp;&nbsp;适用于PC端现代浏览器和移动端现代浏览器。</li>
+<li>操作系统<br>  &nbsp;&nbsp;&nbsp;&nbsp;适用于PC端 Windows及Mac系统，移动端android和ios系统。</li>
+<li>软件运行平台及开发语言<br>  &nbsp;&nbsp;&nbsp;&nbsp;本软件使用VSCode软件开发，开发语言为javascript。</li>
 </ul>
 </li>
-<li><p>界面介绍<br> 本产品分为两大部分，一部分为显示三维球体的显示界面，占整个屏幕的大部分。另一部分为操作按钮部分，占屏幕小部分。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg" alt="main-ui"></p>
+<li><p>界面介绍<br>  &nbsp;&nbsp;&nbsp;&nbsp;本产品分为两大部分，一部分为显示三维球体的显示界面，占整个屏幕的大部分。另一部分为操作按钮部分，占屏幕小部分。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg" alt="main-ui"></p>
 </li>
 <li><p>功能介绍</p>
 <ul>
 <li><p>3.1 顶部菜单</p>
 <p>顶部菜单主要功能是控制图层的显示，加载图层的选择，二维和三维之间的切换。</p>
 </li>
-<li>3.1.1 数据菜单<pre><code>点击数据菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。点击图层按钮![layerTool](https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg),弹出加载不同维度图层栏，再次点击图层按钮，图层加载栏消失。
-</code></pre></li>
+<li>3.1.1 数据菜单 <br>点击数据菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。点击图层按钮 <img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg" alt="layerTool">,弹出加载不同维度图层栏，再次点击图层按钮，图层加载栏消失。</li>
 <li>3.1.1.1 图层管理<br> 图层管理包含图层的加载，移除，缩放至项目范围区，改变图层透明度。图层管理如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg" alt="layers"><ul>
 <li>点击全部移除则添加的图层被全部移除 </li>
 <li>点击图层范围，则定位到该图层范围</li>
@@ -461,7 +461,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">8</span>
-                  <span class="site-state-item-name">articles</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -521,7 +521,7 @@
 
 
 
-  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
 
 
 
