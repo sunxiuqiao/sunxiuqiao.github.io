@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Accueil
           </a>
         </li>
       
@@ -261,7 +261,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-23T14:07:07+08:00">
                 2018-02-23
@@ -304,35 +304,57 @@
         
           
             <ol>
-<li><p>总体介绍</p>
-<p> 本产品分为两大部分，一部分为显示三维球体的显示界面，占整个屏幕的大部分。另一部分为操作按钮部分，占屏幕小部分。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg" alt="main-ui"></p>
-</li>
-<li><p>顶部菜单功能说明</p>
-<p>  顶部菜单主要功能是控制图层的显示，加载图层的选择，二维和三维之间的切换。<br>  点击菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。点击图层按钮<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg" alt="layerTool">,弹出加载不同维度图层栏，再次点击图层按钮，图层加载栏消失。</p>
-</li>
-<li><p>右侧操作柄功能说明</p>
-<p> 右侧操作柄功能是控制三维地球放大，缩小，旋转，复位。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/tools.jpg" alt="tools"> </p>
+<li><p>引言</p>
 <ul>
-<li>点击加号地球放大</li>
-<li>点击减号地球缩小</li>
-<li>点击加号和减号二者中间符号复位 </li>
-<li>鼠标拖动指北针旋转三维球一同旋转</li>
+<li>系统概述<br>基于WebGL开源库cesium，结合前端框架react，消息管理redux机制，编写的一套可以加载并展示矢量数据，三维倾斜摄影场景数据，模型数据的系统。大大提高了便携程度，减少了软件开发周期，降低了人力成本。</li>
+<li>编写目的<br>本手册为使用本系统人员服务，详细说明每一个功能用途及使用方法。</li>
+<li>使用范围<br>仅限于本系统开发人员和使用人员，解释权归开发人员所有。</li>
+<li>运行环境<br>适用于PC端所有浏览器和移动端所有浏览器。</li>
+<li>操作系统<br>适用于PC端 Windows及Mac系统，移动端android和ios系统。</li>
+<li>软件运行平台及开发语言<br>本软件使用VSCode软件开发，开发语言为javascript。</li>
 </ul>
 </li>
-<li><p>图层管理功能说明<br>  图层管理包含图层的加载，移除，缩放至项目范围区，改变图层透明度。图层管理如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg" alt="layers"></p>
+<li><p>界面介绍<br> 本产品分为两大部分，一部分为显示三维球体的显示界面，占整个屏幕的大部分。另一部分为操作按钮部分，占屏幕小部分。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/main.jpg" alt="main-ui"></p>
+</li>
+<li><p>功能介绍</p>
 <ul>
+<li><p>3.1 顶部菜单</p>
+<p>顶部菜单主要功能是控制图层的显示，加载图层的选择，二维和三维之间的切换。</p>
+</li>
+<li>3.1.1 数据菜单<pre><code>点击数据菜单按钮，弹出左侧图层管理，单击箭头，左侧图层管理消失。点击图层按钮![layerTool](https://github.com/sunxiuqiao/cesium-ui/raw/master/layerTool.jpg),弹出加载不同维度图层栏，再次点击图层按钮，图层加载栏消失。
+</code></pre></li>
+<li>3.1.1.1 图层管理<br> 图层管理包含图层的加载，移除，缩放至项目范围区，改变图层透明度。图层管理如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/meau-in.jpg" alt="layers"><ul>
 <li>点击全部移除则添加的图层被全部移除 </li>
 <li>点击图层范围，则定位到该图层范围</li>
 <li>拖动滑动条，改变图层的透明度</li>
+</ul>
+</li>
+<li><p>3.1.1.2 数据加载</p>
+<ul>
 <li>点击添加图层，弹出图层列表，如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/layers.jpg" alt="layers"></li>
 <li>点击想要加载的图层类型，点击加号加载图层至三维球</li>
 </ul>
 </li>
-<li><p>不同维度图层加载功能说明</p>
-<p> 不同维度图层加载包括二维影像，三维影像和2.5D影像。如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayer.jpg" alt="3dlayer"><br> 点击不同的维度，对应出现不同维度的影像，右边的操作柄也随之变动。点击2.5D和2D指北针消失，点击3D指北针出现。</p>
+<li><p>3.1.2 图层菜单<br> 点击图层菜单出现不同维度影像加载列表。不同维度图层加载包括二维影像，三维影像和2.5D影像。如下图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/3dlayer.jpg" alt="3dlayer"><br> 点击不同的维度，对应出现不同维度的影像，右边的操作柄也随之变动。点击2.5D和2D指北针消失，点击3D指北针出现。</p>
 </li>
-<li><p>右下角经纬度显示</p>
-<p> 随着鼠标在三维球上滑动，获取实时的经纬度显示在右下角。如图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/lon.jpg" alt="lon"></p>
+<li>3.2 操作手柄<br> 右侧操作柄功能是控制三维地球放大，缩小，旋转，复位。如下图所示:<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/tools.jpg" alt="tools"> <ul>
+<li>3.2.1<ul>
+<li>3.2.1.1 指北针<br>鼠标拖动指北针旋转三维球一同旋转</li>
+<li>3.2.1.2 缩放<ul>
+<li>点击加号地球放大</li>
+<li>点击减号地球缩小</li>
+<li>点击加号和减号二者中间符号复位 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.3 底部显示<ul>
+<li>3.3.1 经纬度实时显示<br>随着鼠标在三维球上滑动，获取实时的经纬度显示在右下角。如图所示：<img src="https://github.com/sunxiuqiao/cesium-ui/raw/master/lon.jpg" alt="lon"></li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 
@@ -412,7 +434,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-21T21:58:55+08:00">
                 2018-01-21
@@ -532,7 +554,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-25T10:34:34+08:00">
                 2017-12-25
@@ -651,7 +673,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-11T23:30:17+08:00">
                 2017-12-11
@@ -771,7 +793,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-23T20:39:48+08:00">
                 2017-11-23
@@ -896,7 +918,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-18T14:38:47+08:00">
                 2017-11-18
@@ -1016,7 +1038,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-25T08:37:45+08:00">
                 2017-10-25
@@ -1139,7 +1161,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-13T14:08:27+08:00">
                 2017-10-13
@@ -1264,7 +1286,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">8</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">articles</span>
                 </a>
               </div>
             
@@ -1324,7 +1346,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
 
 
 
