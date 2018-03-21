@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="没有铜锣烧就没有四次元口袋">
+<meta name="description" content="今天重新看了一下关于css的position布局，MDN受益良多。position粗略地来说分为五种布局：static， relative, absuolate , fixed(类似于absulate), sticky，其中比较不常用的就是sticky布局（粘性布局），因为兼容性的问题，所以现在浏览器对他的兼容性不是很好。  static布局 贯穿于文档流中，其中top, right, botto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于css的position">
 <meta property="og:url" content="http://yanhejin.com/2018/03/21/关于css的position/index.html">
 <meta property="og:site_name" content="哆啦酱的博客">
-<meta property="og:description" content="没有铜锣烧就没有四次元口袋">
+<meta property="og:description" content="今天重新看了一下关于css的position布局，MDN受益良多。position粗略地来说分为五种布局：static， relative, absuolate , fixed(类似于absulate), sticky，其中比较不常用的就是sticky布局（粘性布局），因为兼容性的问题，所以现在浏览器对他的兼容性不是很好。  static布局 贯穿于文档流中，其中top, right, botto">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-03-21T14:32:46.000Z">
+<meta property="og:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/relative.png">
+<meta property="og:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/absolute.png">
+<meta property="og:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/absolute2.png">
+<meta property="og:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/fixed.png">
+<meta property="og:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/sticky.png">
+<meta property="og:updated_time" content="2018-03-21T14:55:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于css的position">
-<meta name="twitter:description" content="没有铜锣烧就没有四次元口袋">
+<meta name="twitter:description" content="今天重新看了一下关于css的position布局，MDN受益良多。position粗略地来说分为五种布局：static， relative, absuolate , fixed(类似于absulate), sticky，其中比较不常用的就是sticky布局（粘性布局），因为兼容性的问题，所以现在浏览器对他的兼容性不是很好。  static布局 贯穿于文档流中，其中top, right, botto">
+<meta name="twitter:image" content="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/relative.png">
 
 
 
@@ -299,7 +305,15 @@
       
 
       
-        
+        <p>今天重新看了一下关于css的position布局，MDN受益良多。<br>position粗略地来说分为五种布局：static， relative, absuolate , fixed(类似于absulate), sticky，其中比较不常用的就是sticky布局（粘性布局），因为兼容性的问题，所以现在浏览器对他的兼容性不是很好。</p>
+<ul>
+<li>static布局 贯穿于文档流中，其中top, right, bottom, legt 和z-index属性对其无效，static布局是默认的布局</li>
+<li>relative布局 组件仍然在文档流中中，它的位置是相对于他自身值的top, right, bottom ,left的。  这种偏移量不会影响其他组件的位置。再在不改变页面布局的前提下调整元素位置。position:relative 对 table-*-group, table-row, table-column, table-cell, table-caption 元素无效。<img src="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/relative.png" alt="relative"></li>
+<li>absolute布局 不为元素预留空间，通过指定元素相对于非static定位祖先元素的偏移来确定位置。可以设置margin（外边距），并且不会与其他外边距合并。<img src="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/absolute.png" alt="absolute"><img src="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/absolute2.png" alt="absolute2"></li>
+<li>fixed 布局 不为元素预留空间，通过指定元素与屏幕窗口的位置来指定元素位置。元素在屏幕滚动时会保持位置不变。打印时，元素会出现在每页固定的地方。<img src="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/fixed.png" alt="fixed"></li>
+<li>sticky布局  根据正常流计算盒位置，然后相对于该元素在流中的flowroot和containing block定位。<img src="https://github.com/sunxiuqiao/you-donnot-know-js/raw/master/sticky.png" alt="sticky"></li>
+</ul>
+
       
     </div>
     
