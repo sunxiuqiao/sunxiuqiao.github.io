@@ -849,7 +849,17 @@
       
         
           
-            <p>最近在学习react框架，经过差不多一个月了，多少有点收获，中间的过程可以说是举步维艰了（我太笨）。记录一下<br>首先，这次学习react框架，其中用到了cesium，redux，material这些。这些对我来说也全部都是新的，没有接触过，其实学习react最难的部分，就是喝redux结合的部分，关于怎么正确的梳理state的流向，如何使用state让我的一个头两个大。不过还是硬着头皮继续学习，redux刚刚在一知半解的状态。不过刚刚学会怎么进行界面之间的组建交互。<br>这里记录一下在react中使用material-ui吧，这是谷歌出品的一个专门为界面而生的选手，界面效果灰常的不错，可以通吃pc和移动端，毫不费劲。最简单的例子，使用yarn add react-app react 创建一个最简单的react例子<br>在这个简单示例中使用yarn install material-ui来安装。组件内的响应可以自定义函数，实现控件出现，消失。使用state来管理。这中间涉及es6语法，用的比较多的算是箭头函数，导入，导出，webpack打包机制，npm（yarn）来启动程序。<br>react框架中，index.js是程序的入口js，里面的render即为入口函数的渲染，react框架遵循一个自上而下的数据流，整个框架的入口挂载只有一个父节点，通过父节点，将数据一层一层的传下去，而不是硬挂载。可以通过this.props来传入全局的state，使用class类来继承父组件。其中，props的引入是在类中的构造函数里面，构造函数中要将定义的函数进行绑定，即内联的方法添加了事件处理函数。暂时写这么多，下周学会material-ui和cesium中使用redux进行状态交互再来更新～～</p>
+            <p>最近在学习react框架，经过差不多一个月了，多少有点收获，中间的过程可以说是举步维艰了（我太笨）。记录一下<br>首先，这次学习react框架，其中用到了cesium，redux，material这些。这些对我来说也全部都是新的，没有接触过，其实学习react最难的部分，就是喝redux结合的部分，关于怎么正确的梳理state的流向，如何使用state让我的一个头两个大。不过还是硬着头皮继续学习，redux刚刚在一知半解的状态。不过刚刚学会怎么进行界面之间的组建交互。<br>这里记录一下在react中使用material-ui吧，这是谷歌出品的一个专门为界面而生的选手，界面效果灰常的不错，可以通吃pc和移动端，毫不费劲。最简单的例子，使用yarn add react-app react 创建一个最简单的react例子<br>在这个简单示例中使用yarn install material-ui来安装。组件内的响应可以自定义函数，实现控件出现，消失。使用state来管理。这中间涉及es6语法，用的比较多的算是箭头函数，导入，导出，webpack打包机制，npm（yarn）来启动程序。<br>react框架中，index.js是程序的入口js，里面的render即为入口函数的渲染，react框架遵循一个自上而下的数据流，整个框架的入口挂载只有一个父节点，通过父节点，将数据一层一层的传下去，而不是硬挂载。可以通过this.props来传入全局的state，使用class类来继承父组件。其中，props的引入是在类中的构造函数里面，构造函数中要将定义的函数进行绑定，即内联的方法添加了事件处理函数。</p>
+<p>使用react这个框架已经两个多月了，记录一下心得。</p>
+<ul>
+<li>安装react npm install -g create-react-app<pre><code>--- create-react-app my-app
+--- cd my-app
+--- npm start
+</code></pre></li>
+<li>通过上述操作即创建了一个react，可以通过这个脚手架可以写一些自己的代码了。</li>
+<li>这次主要记录的是react中组件的创建，可以通过function Component(){return()} 形式来创建一个不传状态的组件；通过class MyComponent extend React.Component(){} 来创建一个带状态的组件。</li>
+<li>状态的提升 如果有两个平行组件需要实时通信互通有无，这个时候需要状态提升，即把这两个平行组件的状态都放在最近的一个父组件中，来实时更新子组件的状态。   </li>
+</ul>
 
           
         
